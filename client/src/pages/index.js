@@ -1,4 +1,5 @@
 import * as React from "react"
+import Post from "../models/Post"
 import "@material-ui/core"
 // styles
 const pageStyles = {
@@ -48,9 +49,7 @@ class IndexPage extends React.Component {
     } else {
       console.log(posts);
       var postListItems = posts.map((post) =>
-        <li>{post.content}<br />
-        - {post.author}
-        </li>
+        <Post content={post}></Post>
       );
       return (
         <main style={pageStyles}>

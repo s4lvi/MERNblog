@@ -10,7 +10,7 @@ var UserSchema = new Schema({
         type: String
     },
     password: {
-
+        type: String
     },
     createdAt: {
         type: Date,
